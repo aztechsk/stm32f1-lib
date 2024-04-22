@@ -1,0 +1,61 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="ucdrv" target="8" version="2">
+  <project Name="ucdrv">
+    <configuration
+      Name="Common"
+      c_only_additional_options="-Wall;-Wextra;-Wstrict-prototypes;-Wmissing-prototypes;-Wmissing-declarations;-Wshadow;-Wpointer-arith;-Wbad-function-cast;-Wcast-align;-Wcast-qual;-Wjump-misses-init;-Wno-unused-parameter;-Wno-unused-but-set-variable;-Wundef"
+      c_system_include_directories="$(ProjectDir)/../freertos/src/inc"
+      c_user_include_directories="$(ProjectDir)/../ucdrv/inc;$(ProjectDir)/../inc;$(ProjectDir)/../sys/src"
+      project_directory=""
+      project_type="Library" />
+    <folder Name="src">
+      <file Name="clk.c" file_name="src/clk.c" />
+      <file Name="clk.h" file_name="src/clk.h" />
+      <file Name="rst.c" file_name="src/rst.c" />
+      <file Name="rst.h" file_name="src/rst.h" />
+      <file Name="pwr.c" file_name="src/pwr.c" />
+      <file Name="pwr.h" file_name="src/pwr.h" />
+      <file Name="gpio.c" file_name="src/gpio.c" />
+      <file Name="gpio.h" file_name="src/gpio.h" />
+      <file Name="ledui.c" file_name="src/ledui.c" />
+      <file Name="ledui.h" file_name="src/ledui.h" />
+      <file Name="led.c" file_name="src/led.c" />
+      <file Name="led.h" file_name="src/led.h" />
+      <file Name="flash.c" file_name="src/flash.c" />
+      <file Name="flash.h" file_name="src/flash.h" />
+      <file Name="sercom_isr.c" file_name="src/sercom_isr.c" />
+      <file Name="sercom_isr.h" file_name="src/sercom_isr.h" />
+      <file Name="sercom.c" file_name="src/sercom.c" />
+      <file Name="sercom.h" file_name="src/sercom.h" />
+      <file Name="criterr.c" file_name="src/criterr.c" />
+      <file Name="criterr.h" file_name="src/criterr.h" />
+      <file Name="hwerr.c" file_name="src/hwerr.c" />
+      <file Name="hwerr.h" file_name="src/hwerr.h" />
+      <file Name="tim_isr.c" file_name="src/tim_isr.c" />
+      <file Name="tim_isr.h" file_name="src/tim_isr.h" />
+      <file Name="tim.c" file_name="src/tim.c" />
+      <file Name="tim.h" file_name="src/tim.h" />
+      <file Name="afio.c" file_name="src/afio.c" />
+      <file Name="afio.h" file_name="src/afio.h" />
+      <file Name="extint.c" file_name="src/extint.c" />
+      <file Name="extint.h" file_name="src/extint.h" />
+      <file Name="btn.c" file_name="src/btn.c" />
+      <file Name="btn.h" file_name="src/btn.h" />
+      <file Name="iwdg.c" file_name="src/iwdg.c" />
+      <file Name="iwdg.h" file_name="src/iwdg.h" />
+      <file Name="wwdg.c" file_name="src/wwdg.c" />
+      <file Name="wwdg.h" file_name="src/wwdg.h" />
+      <file Name="i2cm.c" file_name="src/i2cm.c" />
+      <file Name="i2cm.h" file_name="src/i2cm.h" />
+      <file Name="i2c_isr.c" file_name="src/i2c_isr.c" />
+      <file Name="i2c_isr.h" file_name="src/i2c_isr.h" />
+      <file Name="devid.c" file_name="src/devid.c" />
+      <file Name="devid.h" file_name="src/devid.h" />
+      <file Name="modbm.c" file_name="src/modbm.c" />
+      <file Name="modbm.h" file_name="src/modbm.h" />
+      <file Name="sigidle.c" file_name="src/sigidle.c" />
+      <file Name="sigidle.h" file_name="src/sigidle.h" />
+    </folder>
+    <configuration Name="Release" gcc_optimization_level="Level 1" />
+  </project>
+</solution>
